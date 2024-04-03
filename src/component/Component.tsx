@@ -24,3 +24,19 @@ export default function Component() {
     </>  //  <div>로 전체를 묶어줘야 1개 이상 요소 반환 가능
     );
 }
+
+function JsxComponent () {
+
+    // JSX (TSX)의 규칙
+    // 1. 반드시 하나의 요소를 반환 (<div> 요소 혹은 <>:빈 요소)
+    // 2. 모든 태그 닫기
+    // 3. 속성들을 JSX로 지정되어 있는 이름으로 사용해야 함 (LowerCamelCase)
+    return (
+        <>
+            <h1>첫번째 페이지입니다.</h1>
+            <div>
+                <img src= 'https://flexible.img.hani.co.kr/flexible/normal/960/960/imgdb/resize/2019/0121/00501111_20190121.JPG' className= 'image-box' />
+            </div>
+        </>
+    )
+}
