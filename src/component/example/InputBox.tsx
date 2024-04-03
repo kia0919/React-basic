@@ -1,3 +1,4 @@
+
 // InputBox.tsx
 
 // IdInputBox, PasswordInputBox 함수형 컴포넌트 생성
