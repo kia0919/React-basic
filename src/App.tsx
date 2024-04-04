@@ -3,6 +3,7 @@ import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
 import SignInContainer from './component/example/SigninContainer';
+import CurlyBraces from './component/CurlyBraces';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -22,9 +23,9 @@ import SignInContainer from './component/example/SigninContainer';
 // - class로 컴포넌트를 작성
 // - 반드시 첫글자는 대문자로 작성
 // - react 패키지에 있는 Component 클래스를 상속하여 구현
-// - render() 함수의 반환값으로 렌더링하고자 하는 요소를 지정
+// - render() 함수의 반환값으로 렌더링하고자 하는 요소를 지정, class 컴포넌트에 필수
 class ClassComponent extends React.Component {
-  render(): React.ReactNode {
+  render(): React.ReactNode { // <h1>클래스형 컴포넌트</h1>얘를 반환, 반환타입이 React.ReactNode
     return (
       <h1>클래스형 컴포넌트</h1>
     );
@@ -56,6 +57,7 @@ function FunctionComponent () {
 //   }
 // }
 
+
 // * 함수형 : rfc 단축 명령으로 생성 가능 
 // * 함수명 = 파일명과 동일하게 작성됨
 // rfc
@@ -72,7 +74,8 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      <SignInContainer />
+      {/* <SignInContainer /> */}
+      <CurlyBraces/>
     </>
   );
 }

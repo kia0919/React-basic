@@ -12,12 +12,13 @@ import App from './App';
 // 6. // IF ~~아래 코드를 제거
 // 7. index.css에서 code 태그 스타일 제거
 
+// 요소를 꺼내오는 작업.
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>
 );
 
