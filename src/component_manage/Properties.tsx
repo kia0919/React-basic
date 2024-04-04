@@ -9,21 +9,25 @@ interface Props {
     // title, content:Props의 속성
     title: string;
     content: string;
+    // ?=선택적. 원래 interface에 지정한 속성은 반드시 사용하지만 ? 사용으로 사용하지 않아도 됨
+    nickName?: string;
 }
 
 //Child 함수형 컴포넌트props 매개변수를 받아 전달된 속성을 참조
-function Child(props: Props) {
+function Child({title, content, nickName='비공개' }: Props) {   // 매개변수를 객체로 넣고 Props타입을 사용으로 코드를 더 간결하게 사용 가능
 
-    // props = {
-    //     title: '제목1',
-    //     content: '내용1'
-    // }
+    // const title = props.title;
+    // const content = props.title;
 
-    // 함수형은 this가 없어서 props 매개변수를 직접 받아 사용
+    // const { title, content } = props;
+
+    // 함수형은 this가 없어서 props 매개변수를 직접 받아 사용 props.title를 넣어서 사용할 수 있지만,
+    // 위에 변수에 할당하여서 반환 내용에 title, content만 넣어서 사용할 수 있다.
     return (
         <div>
-            <h1>{props.title}</h1>
-            <p>{props.content}</p>
+            <h1>{title}</h1>
+            <h4>{nickName}</h4>
+            <p>{content}</p>
         </div>
     )
 }
@@ -31,9 +35,9 @@ function Child(props: Props) {
 export default function Properties() {
   return (
     <>
-        <Child title='제목1' content='내용1'/>
-        <Child/>
-        <Child/>
+        <Child title='제목1' content='내용1' nickName='로제' />
+        <Child title='국제인구 이동' content='보도자료' />
+        <Child  title='외국인 지역별 통계' content='제가 못찾는 것일까요?'/>
     </>
   )
 }
