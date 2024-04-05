@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 export default function CurlyBraces() {
@@ -17,7 +16,7 @@ export default function CurlyBraces() {
 
 // JSX
   return (
-    // 10 + 20 title에 { } 하지 않으면 일반 text로 인식됨. 연산이 되지 않음 
+    // 10 + 20 title에 { } 하지 않으면 일반 text로 인식됨. 연산이 되지 않음
     <div style={{ color: 'red' }}>{10 + 20} {title}</div>    
   )
 }

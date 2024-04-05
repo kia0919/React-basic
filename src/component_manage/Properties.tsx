@@ -6,7 +6,9 @@ import React from 'react'
 // - 자식 컴포넌트에서는 JS의 매개변수 방식으로 받음
 // - 전달할 수 있는 데이터는 JS로 표현할 수 있는 모든 형태
 // - 컴포넌트가 리렌더링되는 기준으로 삼을 수 있음
+// - Properties 부모 요소에서 자식 요소로 데이터 전송 가능 / 자식 요소에서 부모 요소로 데이터 전송은 불가능
 
+// 속성 전달.
 interface Props {   
     // title, content:Props의 속성
     title: string;

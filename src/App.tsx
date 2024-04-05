@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
-import SignInContainer from './component/example/SignInContainer';
+import SignInContainer1 from './component/example/SignInContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
-import SignInContainera from './component_manage/example/SignInContainera';
+import ConditionalRendering from './component_manage/example/ConditionalRendering';
+
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -75,10 +76,10 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      <SignInContainer />
+      {/* <SignInContainer1 /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
-      <SignInContainera />
+      <ConditionalRendering />
     </>
   );
 }

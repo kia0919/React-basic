@@ -5,7 +5,7 @@ export function IdInputBox() {
 const label = '이메일';
 const type = 'text';
 const placeholder = '이메일을 입력해주세요.';
-const button = '이메일 인증'
+const button = '이메일 인증';
 
 return (
   <div className="input-box">
@@ -23,7 +23,7 @@ interface Props {
   label: string;
   type: 'text' | 'password';
   placeholder: string;
-  button: string;
+  button?: string;
 }
 
 export default function InputBox({ label, type, placeholder, button}: Props) {
