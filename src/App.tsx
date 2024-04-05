@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css';
 import Component from './component/Component';
@@ -5,10 +6,9 @@ import Sample from './component/Sample';
 import SignInContainer1 from './component/example/SignInContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
-import ConditionalRendering from './component_manage/example/ConditionalRendering';
-import SignInContainer from './component/example/SignInContainer';
+import SignInContainer from './component_manage/example/SignInContainer';
+import ConditionalRendering from './component_manage/ConditionalRendering';
 import ListRendering from './component_manage/ListRendering';
-
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -78,11 +78,11 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      {/* <SignInContainer /> */}
+      <SignInContainer />
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
       {/* <ConditionalRendering /> */}
-      <ListRendering />
+      {/* <ListRendering /> */}
     </>
   );
 }
