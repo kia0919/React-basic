@@ -31,12 +31,43 @@ function AndComponent ({number}: {number:number}) {
     // ex) 만약 number가 양수면 '양수'를 렌더링
     // 양수가 아니면 '양수가 아님'을 렌더링
     // if (number > 0) return '양수';
-    return (
+    // 양수가 아니면 '양수가 아님'을 렌더링
+    // if (number <= 0) return '양수가 아님';
+    // if (! (number > 0)) return '양수가 아님';
+
+    // && 논리 연산자는 조건들이 다 true여야 반환이 되므로, 앞에서 ture이면 뒤의 조건여부에 따라 출력이되므로,
+    // 뒤의 결과로 확장이 되서 앞이 true이고, 뒤에가 빈값이 아니고 true값이나 문자열일경우 뒤에 값이 반환되므로,
+    // 밑의 코드는 앞이 true일경우 양수가 반환된다.
+   return (
         <h1>
             { number > 0 && '양수' }
-            </h1>
+            { number <= 0 && '양수가 아님' }
+            {/* { number > 0 || '양수가 아님' } */}
+        </h1> 
     )
 }
+
+function ThreeTermComponent ({number}: {number:number}) {
+    // 삼항 연산자(? :) 를 이용한 조건부 렌더링
+    //  JSX 내부에서 (return 안) 상황(조건)에 따라서 서로 다른 렌더링을 하고 싶을 때 사용
+    
+    // ex) number가 양수면 '양수', 음수면 '음수', 0이면 '영'
+    return (
+            <h1>
+                {number > 0 ? '양수': number < 0 ? '음수' : '영'}
+            </h1>
+    //      <h1>
+    //     {number > 0 && '양수'}
+    //     {number < 0 && '음수'}
+    //     {number === 0 && '양'}
+    //      </h1>
+        )
+    }
+    // <h1>
+    //     {number > 0 && '양수'}
+    //     {number < 0 && '음수'}
+    //     {number === 0 && '양'}
+    // </h1>
 
 export default function ConditionalRendering() {
   return (
@@ -44,9 +75,13 @@ export default function ConditionalRendering() {
             <IfComponent number={1} />
             <IfComponent number={-1} />
             <IfComponent number={0} />
-            
+
             <AndComponent number={1} />
             <AndComponent number={0} />
+
+            <ThreeTermComponent number={1} />
+            <ThreeTermComponent number={0} />
+            <ThreeTermComponent number={-1} />
         </>
     )
 }
