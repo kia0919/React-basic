@@ -13,8 +13,10 @@ export default function StateComponent() {
     // - const [상태변수, 상태변경함수] = useState<상태변수타입>(초기값);
 
     // let count = 0;
-    // count[상태변수로 사용], setCount[상태변경함수로 사용]
+    // count[상태변수로 사용], setCount[상태변경함수로 사용], useState함수 사용<type>
     const [count, setCount] = useState<number>(0);
+    // let total: number = 0;
+    const [total, setTotal] = useState<number>(0);
 
     const onCountAddHandler = () => {
         // setCount(count + 1);
@@ -32,7 +34,7 @@ export default function StateComponent() {
         // setCount(count + 1);
         // console.log(count);
 
-        
+
         //  setCount((count) => count +1);
         // 상태변경 함수에 콜백 함수를 전달하면 해당 콜백 함수는 상태 변경 작업을 누적해서 함
         // setCount((count) => count +1);
@@ -43,12 +45,18 @@ export default function StateComponent() {
         // console.log(count);
         // setCount(count + 1);
         // console.log(count);
+
+        // 변경된 상태를 사용하고 싶을 때 임시 변수를 사용하여 간접 사용.
+        const tmp = count + 1;
+        setCount(tmp);
+        setTotal(total + tmp);
     };
 
   return (
     <>
         <button onClick={onCountAddHandler}>+</button>
         <h1>{count}</h1>
+        <h1>{total}</h1>
     </>    
   );
 }
