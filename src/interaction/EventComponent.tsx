@@ -36,6 +36,5 @@ export default function EventComponent() {
             <button onClick={onCountAddHandler}>+</button>
             <h1>{count}</h1>
         </>
-        
     );
 }

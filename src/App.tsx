@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.css';
 import Component from './component/Component';
@@ -11,6 +10,7 @@ import ConditionalRendering from './component_manage/ConditionalRendering';
 import ListRendering from './component_manage/ListRendering';
 import EVentComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
+import FowordingStateComponent from './interaction/FowordIngStateComponent';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -86,7 +86,8 @@ function App() {
       {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
       {/* <EVentComponent/> */}
-      <StateComponent/>
+      {/* <StateComponent/> */}
+      <FowordingStateComponent />
     </>
   );
 }
