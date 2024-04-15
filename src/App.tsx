@@ -2,16 +2,17 @@ import React from 'react';
 import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
-import SignInContainer1 from './component/example/SigninContainer';
+import SignInContainer from './component/example/SigninContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
-import SignInContainer from './component_manage/example/SignUpContainer';
+import SignUpContainer from './component_manage/example/SignUpContainer';
 import ConditionalRendering from './component_manage/ConditionalRendering';
 import ListRendering from './component_manage/ListRendering';
-import EVentComponent from './interaction/EventComponent';
+import EventComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
-import FowordingStateComponent from './interaction/ForwordingStateComponent';
 import ForwordingStateComponent from './interaction/ForwordingStateComponent';
+import HookComponent1 from './hook/HookComponent1';
+import HookComponent2 from './hook/HookComponent2';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -81,14 +82,16 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      {/* <SignInContainer /> */}
+      {/* <SignUpContainer /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
       {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
-      {/* <EVentComponent/> */}
-      {/* <StateComponent/> */}
-      <ForwordingStateComponent />
+      {/* <EventComponent /> */}
+      {/* <StateComponent /> */}
+      {/* <ForwordingStateComponent /> */}
+      <HookComponent1 />
+      {/* <HookComponent2 /> */}
     </>
   );
 }
