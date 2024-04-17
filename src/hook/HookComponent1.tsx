@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-// Hook 함수 : 
+//! Hook 함수 : 
 // - react에서 컴포넌트의 상태와 생명주기에 따른 기능을 수행할 수 있도록 해주는 특별한 함수
 // - use 시작하는 함수
 // - hook 함수의 종류
@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 // - useCallback : 메모리 내에서 함수를 재사용할 수 있도록 하는 함수, 렌더링 없이 특정 함수를 다시 호출할 수 있도록 해줌
 // - useMemo : 메모리에 계산된 값(함수의 결과)을 저장하여 함수 재실행 없이 사용할 수 있도록 하는 함수
 
-// - 훅 함수는 반드시 컴포넌트의 코드 블럭에 존재해야함
+//! - 훅 함수는 반드시 컴포넌트의 코드 블럭에 존재해야함
 // - 만약 컴포넌트의 코드 블럭 외에 존재하고 싶다면 그 코드 블럭은 반드시 훅 함수이어야 함
 // const [count, setCount] = useState<number>(0);
 

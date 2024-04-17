@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from 'react'
 
-// 상태(status) :
+//! 상태(status) :
 // - 각각의 컴포넌트가 가지는 데이터
 // - 컴포넌트의 렌더링 결과에 영향을 미침
 // - 컴포넌트는 독립적인 상태를 가질 수 있음
@@ -8,7 +8,7 @@ import React, { ChangeEvent, useState } from 'react'
 
 export default function StateComponent() {
 
-    // status 선언: 
+    //! status 선언: 
     // - useState 함수로 함수 선언
     // - const [상태변수, 상태변경함수] = useState<상태변수타입>(초기값);
 
@@ -23,7 +23,7 @@ export default function StateComponent() {
     const [favorite, setFavorite] = useState<string>('');
 
     const onCountAddHandler = () => {
-        // setCount(count + 1);
+        //! setCount(count + 1);
 
         // 상태변수는 반드시 상태변경함수로 변경해야 리렌더링이 된다.
         // count++;

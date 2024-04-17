@@ -4,16 +4,16 @@ export default function HookComponent2() {
 
     const [image, setImage] = useState<string>('');
 
-    // useRef : 
+    //! useRef : 
     // - DOM 객체를 직접 다루고자 할때 혹은 렌더링 없이 값을 변경 저장하고자 할때 사용
     // const DOM객체참조변수 = useRef<DOM요소타입>(초기값);
     // DOM 객체를 참조하기 위해서 useRef를 사용하면 참조할 요소의 ref={} 속성에 해당 참조변수를 지정해야함
     const inputRef = useRef<HTMLInputElement>(null);    // inputRef => HTMLInputElement | null
 
     const onButtonClickHandler = () => {
-        // ref의 참조 객체는 해당 변수의 currunt 속성에 들어있음
+        //! ref의 참조 객체는 해당 변수의 currunt 속성에 들어있음
 
-        // 참조변수(null 혹은 undefined를 가질수 있는 object 타입의 변수)에서
+        //! 참조변수(null 혹은 undefined를 가질수 있는 object 타입의 변수)에서
         // 특정 속성 및 메서드를 호출하려할때 null 혹은 undefined가 아닌 상태에서만
         // 작업을 수행하도록 하려면 참조변수?.속성 혹은 참조변수?.함수()로 실행
         // inputRef.current?.focus();

@@ -1,7 +1,7 @@
 
 import React, { KeyboardEvent, MouseEvent } from "react";
 
-// 이벤트 처리:
+//! 이벤트 처리:
 // - 웹 페이지(컴포넌트)가 사용자와의 상호작용을 받아들여 그것에 대한 처리를 하는 것
 // - React 컴포넌트에서는 addEventListener를 사용하지 않고 인라인 형식의 on이벤트 속성을 사용
 // - on이벤트 속성은 lowerCamelCase를 따름
