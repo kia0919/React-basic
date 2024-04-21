@@ -4,7 +4,7 @@ import React from 'react'
 // - 상황 (조건)에 따라서 결과를 다르게 렌더링하려 할때 사용하는 방법
 // - if, &&, ? : 을 사용하는 방법이 존재
                                                         
-                                                        // 속성명이 number, 속성명의 타입이 number
+                    // 속성 지정 동시에 타입 지정
 function IfComponent({ number }: { number: number }) {
     // if문을 이용한 조건부 렌더링
     // - 함수 (컴포넌트 함수)내부에서 return을 다르게 주는 방법 

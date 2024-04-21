@@ -3,11 +3,12 @@
 // IdInputBox, PasswordInputBox 함수형 컴포넌트 생성
 // 각각의 컴포넌트는 모두 export 가능하도록 내보내기
 export function IdInputBox() {
-
+// 변수 선언
     const label = '아이디';
     const type = 'text';
     const placeholder = '아이디를 입력해주세요.';
 
+    // 반환 요소
     return (
         <div className="input-box">
             <div className="input-label label">{label}</div>
