@@ -5,6 +5,7 @@ import React from 'react'
 // - JSX 안에서는 for 혹은 while과 같은 반복문 사용할 수 없음
 // - 리스트의 각종 메서드를 활용
 
+// interface: 속성 및 타입 지정
 interface Human {
     name: string;
     age: number;

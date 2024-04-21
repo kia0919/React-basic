@@ -18,7 +18,8 @@ interface Props {
 }
 
 //Child 함수형 컴포넌트props 매개변수를 받아 전달된 속성을 참조
-function Child({title, content, nickName='비공개' }: Props) {   // 매개변수를 객체로 넣고 Props타입을 사용으로 코드를 더 간결하게 사용 가능
+
+function Child({title, content, nickName='비공개' }: Props) {   
 
     // const title = props.title;
     // const content = props.title;

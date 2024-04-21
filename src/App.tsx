@@ -14,7 +14,7 @@ import ForwordingStateComponent from './interaction/ForwordingStateComponent';
 import HookComponent1 from './hook/HookComponent1';
 import HookComponent2 from './hook/HookComponent2';
 import CustomHook from './hook/CustomHook';
-import InputBox from './component/example/InputBox';
+import InputBox, { IdInputBox, PasswordInputBox } from './component/example/InputBox';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -88,7 +88,7 @@ function App() {
       {/* <SignUpContainer /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
       {/* <EventComponent /> */}
       {/* <StateComponent /> */}
@@ -96,6 +96,8 @@ function App() {
       {/* <HookComponent1 /> */}
       {/* <HookComponent2 /> */}
       {/* <CustomHook /> */}
+      <IdInputBox />
+      <PasswordInputBox />
     </>
   );
 }
