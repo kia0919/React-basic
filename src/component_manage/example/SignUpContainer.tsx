@@ -1,4 +1,5 @@
 import React from 'react'
+//? InputBox가 EventComponent파일을 받아와서 EventComponent파일도 같이 가져옴
 import InputBox, { InputBoxProps } from './InputBox';
 import './style.css';
 import './common.css';
@@ -35,7 +36,7 @@ const InputBoxes: InputBoxProps[] = [
 ];
 
 export default function SignUpContainer() {
-
+    //! InputBoxes 배열을 매핑하여 InputBox 컴포넌트로 변환하고, 각각의 컴포넌트를 InputBoxComponents에 저장
     const InputBoxComponents = 
         InputBoxes.map((item, index) => <InputBox key={index} {...item} />)
 

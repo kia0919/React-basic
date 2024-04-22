@@ -91,13 +91,13 @@ function App() {
       {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
       {/* <EventComponent /> */}
-      {/* <StateComponent /> */}
+      <StateComponent />
       {/* <ForwordingStateComponent /> */}
       {/* <HookComponent1 /> */}
       {/* <HookComponent2 /> */}
       {/* <CustomHook /> */}
-      <IdInputBox />
-      <PasswordInputBox />
+      {/* <IdInputBox />
+      <PasswordInputBox /> */}
     </>
   );
 }
